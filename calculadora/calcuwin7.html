@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>calculadora</title>
+    <link rel=stylesheet type="text/css" href="estilos/estilos.css">
+    <link href="estilo.css" rel="stylesheet" type="text/css" />
+    <br>
+    <script type="text/javascript" src="fun.js"></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //document.write("Hello Word")
+    </script>
+    <noscript>
+        Your browser doesn't support or has disabled javascript
+    </noscript>
+</body>
+<form name="f1" ><br>
+    <input type="text" name="txtcaja1" disabled="disabled">
+    <br>
+    <input type="text" name="txtcaja2" value="0">
+    <br>
+    <input class="input" type="button" value="&#8592;" onClick="backSpace()">
+    <input class="input" type="button" value="CE" onClick="document.f1.txtcaja2.value='0'">
+    <input class="input" type="button" value="C" onClick="document.f1.reset(); blocdel = false;">
+    <input class="input" type="button" value="&#177;" onClick="masmenos()">
+    <input class="input" type="button" value="&#8730;" onClick="raiz()">
+    <br>
+    <input class="input" type="button" value="7" onclick="escribir(this.value)">
+    <input class="input" type="button" value="8" onclick="escribir(this.value)">
+    <input class="input" type="button" value="9" onclick="escribir(this.value)">
+    <input class="input" type="button" value="/" onClick="arit('/')">
+    <input class="input" type="button" value="%" onClick="porcentaje()">
+    <br>
+    <input class="input" type="button" value="4" onclick="escribir(this.value)">
+    <input class="input" type="button" value="5" onclick="escribir(this.value)">
+    <input class="input" type="button" value="6" onclick="escribir(this.value)">
+    <input class="input" type="button" value="*" onClick="arit('*')">
+    <input class="input" type="button" value="1/x" onClick="inversa()">
+    <br>
+    <input class="input" type="button" value="1" onclick="escribir(this.value)">
+    <input class="input" type="button" value="2" onclick="escribir(this.value)">
+    <input class="input" type="button" value="3" onclick="escribir(this.value)">
+    <input class="input" type="button" value="-" onClick="arit('-')">
+    <input class="input" type="button" value="=" onClick="calcular()">
+    <br>
+    <input class="input" type="button" value="0" onclick="escribir(this.value)">
+    <input class="input" type="button" value="." onClick="escribir('.')">
+    <input class="input" type="button" value="+" onClick="arit('+')">
+</form>
+
+</html>
+
